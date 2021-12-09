@@ -11,7 +11,7 @@ class jeu_pendu() :
         self.vie = 8
         self.lettre_util = ""
         self.motl=""
-        with open('Dico.json') as json_dic:
+        with open('mots_fr.json') as json_dic:
             self.data_dict = json.load(json_dic)
 
 
@@ -19,7 +19,7 @@ class jeu_pendu() :
         self.lvl = input("difficulté : ")
         if self.lvl.isdigit() :
             
-            if int(self.lvl) in [3,4,5,6,7] :
+            if int(self.lvl) in [3,4,5,6,7,8,9,10,11] :
                 self.mot = self.data_dict[self.lvl][random.randint(0,len(self.data_dict[self.lvl]))]
                 self.mot = self.mot.lower()
                 self.motl = list(self.mot)

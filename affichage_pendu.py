@@ -7,7 +7,7 @@ fen.title("Pendu")
 """ fen.configure(bg="grey") """
 fen.geometry("1500x900")
 
-frame1 = tk.Frame(fen,width=750,height=90   0,bg='red')
+frame1 = tk.Frame(fen,width=750,height=900,bg='red')
 frame1.grid(row=0,column=0)
 
 
